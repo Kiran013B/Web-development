@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+</head>
+<style>
+  
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background: url('./img/work4.jpg');
+        background-size: cover;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+        padding: 20px;
+    }
+
+    #about-me {
+        background:url(./img/photo-160.jpg);
+        background-size: cover;
+        padding: 20px 40px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        width: 100%;
+        text-align: center;
+        animation: fadeIn 2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    #about-me h2 {
+        font-size: 2.5em;
+        font-style:italic;
+        font-weight: 5000;
+        margin-bottom: 0.5em;
+        color: #040413;
+        position: relative;
+    }
+
+    #about-me h2::after {
+        content: '';
+        width: 50px;
+        height: 4px;
+        background: #d09b96;
+        display: block;
+        margin: 0.5em auto;
+        border-radius: 2px;
+    }
+
+    #about-me p {
+        font-size: 1.1em;
+        line-height: 1.6;
+        margin: 1em 0;
+    }
+
+    #about-me ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    #about-me ul li {
+        background: #53b5df;
+        color: white;
+        margin: 0.5em 0;
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        animation: slideIn 0.5s ease-in-out;
+    }
+
+    #about-me ul li:nth-child(even) {
+        background: #000000;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    #about-me ul li::before {
+        content: "";
+        margin-right: 10px;
+    }
+
+    #about-me p a {
+        color: #ce392c;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    #about-me p a:hover {
+        color: #2b2b52;
+    }
+</style>
+
+<body>
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>Hi there! I'm Kiran, a freshly minted web developer with a passion for turning caffeine into code. My journey
+            into the world of web development began with a simple "Hello, World!" and has since evolved into a
+            full-fledged love affair with HTML, CSS, and JavaScript.</p>
+
+        <p>I completed my graduation with a Engineering in Mechanical from Vtu University</p>
+
+        <p>Here are some fun facts about me:</p>
+        <ul>
+            <li>🎨 When I'm not coding, I'm probably doodling website layouts on napkins at my favorite coffee shop.
+            </li>
+            <li>🕹️ I have a secret talent in PUBG video game</li>
+            <li>🌐 My proudest achievement so far? Creating a portfolio website that didn't break when my mom clicked
+                around!</li>
+            <li>🎧 I have a playlist titled "Code Like a Boss" that features everything from classical symphonies to
+                electronic beats.</li>
+            <li>📚 I'm an avid learner and always have a browser tab open to the latest web development trends and
+                tutorials.</li>
+            <li>☕ I'm fueled by coffee and the occasional energy drink—my personal bug fixers.</li>
+            <li>🚴 When I'm not in front of a screen, you can find me exploring the city on my bike or binge-watching
+                tech talks on YouTube.</li>
+        </ul>
+
+        <p>As a web development newbie, I'm constantly learning and evolving. I love tackling new challenges, whether
+            it's figuring out a tricky JavaScript function or optimizing a website for better performance. My goal is to
+            build web applications that are both beautiful and efficient, and I'm excited to bring my fresh perspective
+            to every project I undertake.</p>
+
+        <p>Feel free to check out my portfolio to see what I've been working on. If you want to chat about web
+            development, brainstorm ideas, or just share a funny coding meme, don't hesitate to reach out. Let's connect
+            and create something awesome together!</p>
+
+        <p>Thanks for visiting, and remember: Keep calm and code on!</p>
+    </section>
+
+</body>
+
+</html>
